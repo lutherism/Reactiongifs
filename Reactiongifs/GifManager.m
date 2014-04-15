@@ -64,7 +64,6 @@
 {
     NSError *error = nil;
     NSArray *groups = [GifBuilder imageFromJSON:objectNotation error:&error];
-    NSLog(@"Built %i images from api",[groups count]);
     if (error != nil) {
         [self.delegate fetchingImageFailedWithError:error];
         

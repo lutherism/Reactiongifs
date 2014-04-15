@@ -14,15 +14,9 @@
 		AC2665BE18FB1C59002EB43A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2665BD18FB1C59002EB43A /* main.m */; };
 		AC2665C218FB1C59002EB43A /* GifAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2665C118FB1C59002EB43A /* GifAppDelegate.m */; };
 		AC2665C518FB1C59002EB43A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2665C318FB1C59002EB43A /* Main_iPhone.storyboard */; };
-		AC2665C818FB1C59002EB43A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2665C618FB1C59002EB43A /* Main_iPad.storyboard */; };
 		AC2665CB18FB1C59002EB43A /* GifMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2665CA18FB1C59002EB43A /* GifMasterViewController.m */; };
 		AC2665CE18FB1C59002EB43A /* GifDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2665CD18FB1C59002EB43A /* GifDetailViewController.m */; };
 		AC2665D018FB1C59002EB43A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2665CF18FB1C59002EB43A /* Images.xcassets */; };
-		AC2665D718FB1C59002EB43A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2665D618FB1C59002EB43A /* XCTest.framework */; };
-		AC2665D818FB1C59002EB43A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2665B118FB1C59002EB43A /* Foundation.framework */; };
-		AC2665D918FB1C59002EB43A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2665B518FB1C59002EB43A /* UIKit.framework */; };
-		AC2665E118FB1C59002EB43A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC2665DF18FB1C59002EB43A /* InfoPlist.strings */; };
-		AC2665E318FB1C59002EB43A /* ReactiongifsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2665E218FB1C59002EB43A /* ReactiongifsTests.m */; };
 		AC2665F118FB1D6A002EB43A /* Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2665F018FB1D6A002EB43A /* Gif.m */; };
 		AC2665F518FB2044002EB43A /* GifBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2665F418FB2044002EB43A /* GifBuilder.m */; };
 		AC2665F818FB20BD002EB43A /* GifCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2665F718FB20BD002EB43A /* GifCommunicator.m */; };
@@ -73,18 +67,8 @@
 		AC2666BE18FCF4EA002EB43A /* Warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666B418FCF4EA002EB43A /* Warning@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AC2665DA18FB1C59002EB43A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC2665A618FB1C59002EB43A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC2665AD18FB1C59002EB43A;
-			remoteInfo = Reactiongifs;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		AC2665AE18FB1C59002EB43A /* Reactiongifs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reactiongifs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2665AE18FB1C59002EB43A /* Reactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2665B118FB1C59002EB43A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC2665B318FB1C59002EB43A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AC2665B518FB1C59002EB43A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -95,13 +79,11 @@
 		AC2665C018FB1C59002EB43A /* GifAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifAppDelegate.h; sourceTree = "<group>"; };
 		AC2665C118FB1C59002EB43A /* GifAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifAppDelegate.m; sourceTree = "<group>"; };
 		AC2665C418FB1C59002EB43A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		AC2665C718FB1C59002EB43A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		AC2665C918FB1C59002EB43A /* GifMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifMasterViewController.h; sourceTree = "<group>"; };
 		AC2665CA18FB1C59002EB43A /* GifMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifMasterViewController.m; sourceTree = "<group>"; };
 		AC2665CC18FB1C59002EB43A /* GifDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifDetailViewController.h; sourceTree = "<group>"; };
 		AC2665CD18FB1C59002EB43A /* GifDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifDetailViewController.m; sourceTree = "<group>"; };
 		AC2665CF18FB1C59002EB43A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AC2665D518FB1C59002EB43A /* ReactiongifsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiongifsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2665D618FB1C59002EB43A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AC2665DE18FB1C59002EB43A /* ReactiongifsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiongifsTests-Info.plist"; sourceTree = "<group>"; };
 		AC2665E018FB1C59002EB43A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -193,16 +175,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC2665D218FB1C59002EB43A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC2665D718FB1C59002EB43A /* XCTest.framework in Frameworks */,
-				AC2665D918FB1C59002EB43A /* UIKit.framework in Frameworks */,
-				AC2665D818FB1C59002EB43A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -220,8 +192,7 @@
 		AC2665AF18FB1C59002EB43A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC2665AE18FB1C59002EB43A /* Reactiongifs.app */,
-				AC2665D518FB1C59002EB43A /* ReactiongifsTests.xctest */,
+				AC2665AE18FB1C59002EB43A /* Reactions.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,7 +217,6 @@
 				AC2665C318FB1C59002EB43A /* Main_iPhone.storyboard */,
 				AC26664118FC9813002EB43A /* GifsViewController.h */,
 				AC26664218FC9813002EB43A /* GifsViewController.m */,
-				AC2665C618FB1C59002EB43A /* Main_iPad.storyboard */,
 				AC2665C918FB1C59002EB43A /* GifMasterViewController.h */,
 				AC2665F218FB1E74002EB43A /* GifCommunicatorDelegate.h */,
 				AC2665F318FB2044002EB43A /* GifBuilder.h */,
@@ -385,9 +355,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC2665AD18FB1C59002EB43A /* Reactions */ = {
+		AC2665AD18FB1C59002EB43A /* React with GIFs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC2665E618FB1C59002EB43A /* Build configuration list for PBXNativeTarget "Reactions" */;
+			buildConfigurationList = AC2665E618FB1C59002EB43A /* Build configuration list for PBXNativeTarget "React with GIFs" */;
 			buildPhases = (
 				AC2665AA18FB1C59002EB43A /* Sources */,
 				AC2665AB18FB1C59002EB43A /* Frameworks */,
@@ -397,28 +367,10 @@
 			);
 			dependencies = (
 			);
-			name = Reactions;
+			name = "React with GIFs";
 			productName = Reactiongifs;
-			productReference = AC2665AE18FB1C59002EB43A /* Reactiongifs.app */;
+			productReference = AC2665AE18FB1C59002EB43A /* Reactions.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AC2665D418FB1C59002EB43A /* ReactiongifsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC2665E918FB1C59002EB43A /* Build configuration list for PBXNativeTarget "ReactiongifsTests" */;
-			buildPhases = (
-				AC2665D118FB1C59002EB43A /* Sources */,
-				AC2665D218FB1C59002EB43A /* Frameworks */,
-				AC2665D318FB1C59002EB43A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC2665DB18FB1C59002EB43A /* PBXTargetDependency */,
-			);
-			name = ReactiongifsTests;
-			productName = ReactiongifsTests;
-			productReference = AC2665D518FB1C59002EB43A /* ReactiongifsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -432,9 +384,6 @@
 				TargetAttributes = {
 					AC2665AD18FB1C59002EB43A = {
 						DevelopmentTeam = D94F3ZERQ8;
-					};
-					AC2665D418FB1C59002EB43A = {
-						TestTargetID = AC2665AD18FB1C59002EB43A;
 					};
 				};
 			};
@@ -451,8 +400,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC2665AD18FB1C59002EB43A /* Reactions */,
-				AC2665D418FB1C59002EB43A /* ReactiongifsTests */,
+				AC2665AD18FB1C59002EB43A /* React with GIFs */,
 			);
 		};
 /* End PBXProject section */
@@ -463,7 +411,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2666BD18FCF4EA002EB43A /* Warning.png in Resources */,
-				AC2665C818FB1C59002EB43A /* Main_iPad.storyboard in Resources */,
 				AC26669118FCE878002EB43A /* Icon-76.png in Resources */,
 				AC26669418FCE878002EB43A /* Icon-Small-50@2x.png in Resources */,
 				AC26669618FCE878002EB43A /* Icon-Small@2x.png in Resources */,
@@ -491,14 +438,6 @@
 				AC2665BC18FB1C59002EB43A /* InfoPlist.strings in Resources */,
 				AC2666BA18FCF4EA002EB43A /* Red@2x.png in Resources */,
 				AC26664D18FCBB45002EB43A /* preloader.gif in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC2665D318FB1C59002EB43A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC2665E118FB1C59002EB43A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,23 +478,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC2665D118FB1C59002EB43A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC2665E318FB1C59002EB43A /* ReactiongifsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AC2665DB18FB1C59002EB43A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC2665AD18FB1C59002EB43A /* Reactions */;
-			targetProxy = AC2665DA18FB1C59002EB43A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC2665BA18FB1C59002EB43A /* InfoPlist.strings */ = {
@@ -572,14 +495,6 @@
 				AC2665C418FB1C59002EB43A /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		AC2665C618FB1C59002EB43A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC2665C718FB1C59002EB43A /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		AC2665DF18FB1C59002EB43A /* InfoPlist.strings */ = {
@@ -609,7 +524,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alex Jansen (D94F3ZERQ8)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -628,7 +543,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -648,7 +563,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex Jansen (D94F3ZERQ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alex Jansen (D94F3ZERQ8)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -660,7 +576,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -670,12 +586,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-4";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Jansen (8MRK4479SJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Jansen (8MRK4479SJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reactiongifs/Reactiongifs-Prefix.pch";
 				INFOPLIST_FILE = "Reactiongifs/Reactiongifs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A5CACFF6-FE09-4743-945C-A62099F0B54B";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -686,54 +604,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-4";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Jansen (8MRK4479SJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Jansen (8MRK4479SJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reactiongifs/Reactiongifs-Prefix.pch";
 				INFOPLIST_FILE = "Reactiongifs/Reactiongifs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "React with GIFs";
+				PROVISIONING_PROFILE = "A5CACFF6-FE09-4743-945C-A62099F0B54B";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		AC2665EA18FB1C59002EB43A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Reactiongifs.app/Reactiongifs";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reactiongifs/Reactiongifs-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ReactiongifsTests/ReactiongifsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AC2665EB18FB1C59002EB43A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Reactiongifs.app/Reactiongifs";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reactiongifs/Reactiongifs-Prefix.pch";
-				INFOPLIST_FILE = "ReactiongifsTests/ReactiongifsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -749,21 +629,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC2665E618FB1C59002EB43A /* Build configuration list for PBXNativeTarget "Reactions" */ = {
+		AC2665E618FB1C59002EB43A /* Build configuration list for PBXNativeTarget "React with GIFs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC2665E718FB1C59002EB43A /* Debug */,
 				AC2665E818FB1C59002EB43A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		AC2665E918FB1C59002EB43A /* Build configuration list for PBXNativeTarget "ReactiongifsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC2665EA18FB1C59002EB43A /* Debug */,
-				AC2665EB18FB1C59002EB43A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

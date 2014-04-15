@@ -60,7 +60,6 @@
 
 - (void)didReceiveImage:(NSArray *)images
 {
-    NSLog(@"Viewcontroller received %i images",[images count]);
     _images = [[NSMutableArray alloc]initWithArray:images];
     _imageviews = [[NSMutableArray alloc]init];
     /*int counter = 0;
@@ -146,7 +145,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"drawing cell: %i", indexPath.row);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     if (cell == nil)
     {

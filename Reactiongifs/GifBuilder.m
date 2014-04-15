@@ -54,7 +54,6 @@
     NSMutableArray *gifs = [[NSMutableArray alloc] init];
     
     NSArray *results = [parsedObject valueForKey:@"results"];
-    NSLog(@"Count %d", results.count);
     
     for (NSDictionary *groupDic in results) {
         Gif *gif = [[Gif alloc] init];
@@ -83,7 +82,6 @@
     NSMutableArray *albums = [[NSMutableArray alloc] init];
     
     NSArray *results = [parsedObject valueForKey:@"data"];
-    NSLog(@"Count %d", results.count);
     
     for (NSDictionary *groupDic in results) {
         Album *album = [[Album alloc] init];
