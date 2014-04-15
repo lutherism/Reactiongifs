@@ -7,11 +7,18 @@
 //
 
 #import "GifMasterViewController.h"
-
 #import "GifDetailViewController.h"
+#import "Album.h"
+#import "GifManager.h"
+#import "GifCommunicator.h"
+#import "UIImageView+WebCache.h"
 
 @interface GifMasterViewController () {
     NSMutableArray *_objects;
+    NSArray *_albums;
+    GifManager *_manager;
+    IBOutlet UITableView *albumTable;
+    NSTimer *reloadimages;
 }
 @end
 
@@ -30,11 +37,27 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    /*self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (GifDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+        self.navigationItem.rightBarButtonItem = addButton;
+        self.detailViewController = (GifDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    */
+    _manager = [[GifManager alloc] init];
+    _manager.communicator = [[GifCommunicator alloc] init];
+    _manager.communicator.delegate = _manager;
+    _manager.delegate = self;
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
+								[self methodSignatureForSelector: @selector(timerCallback)]];
+    [invocation setTarget:self];
+    [invocation setSelector:@selector(timerCallback)];
+    reloadimages = [NSTimer scheduledTimerWithTimeInterval:1.0
+										 invocation:invocation repeats:NO];
+    [self startFetchingAlbums];
+}
+
+-(void)timerCallback{
+    [albumTable reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,14 +66,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender
+- (void)startFetchingAlbums
 {
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    NSLog(@"searching...");
+    [_manager fetchAlbumsAtCoordinate:@"reactiongifsarchive"];
+}
+
+- (void)didReceiveAlbums:(NSArray *)albums
+{
+    NSLog(@"got Albums");
+    _albums = albums;
+    [albumTable reloadData];
+    
+}
+
+- (void)fetchingAlbumsFailedWithError:(NSError *)error
+{
+    NSLog(@"Error %@; %@", error, [error localizedDescription]);
 }
 
 #pragma mark - Table View
@@ -62,33 +94,30 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    if(_albums)return [_albums count];
+    else return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    if([_albums count]>0){
+    Album *album = _albums[indexPath.row];
+    NSString *albumname = album.title;
+    NSString *coverlink =[NSString stringWithFormat: @"http://imgur.com/%@t.gif",album.cover];
+    [cell.imageView setImageWithURL:[NSURL URLWithString:coverlink]
+                       placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    cell.textLabel.text = albumname;
+    }
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
-}
 
 /*
 // Override to support rearranging the table view.
@@ -109,17 +138,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = _objects[indexPath.row];
-        self.detailViewController.detailItem = object;
+        Album *album = _albums[indexPath.row];
+        NSString *albumID = album.id;
+        self.detailViewController.detailItem = albumID;
+        NSLog(@"sent data to next view");
     }
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        Album *album = _albums[indexPath.row];
+        [[segue destinationViewController] setDetailItem:album];
     }
 }
 

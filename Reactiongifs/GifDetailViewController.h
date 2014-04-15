@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GifManagerDelegate.h"
 
-@interface GifDetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface GifDetailViewController : UITableViewController <UISplitViewControllerDelegate, UITableViewDelegate, UITableViewDataSource, GifManagerDelegate>
 
 @property (strong, nonatomic) id detailItem;
 

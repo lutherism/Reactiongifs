@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GifManagerDelegate.h"
+
 
 @class GifDetailViewController;
 
-@interface GifMasterViewController : UITableViewController
+@interface GifMasterViewController  : UITableViewController <GifManagerDelegate, UITableViewDataSource, UITableViewDelegate> {
+    
+    
+}
 
 @property (strong, nonatomic) GifDetailViewController *detailViewController;
 
