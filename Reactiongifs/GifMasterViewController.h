@@ -17,6 +17,7 @@
     
 }
 
+@property (strong, nonatomic) IBOutlet UITableView *albumTable;
 @property (strong, nonatomic) GifDetailViewController *detailViewController;
 
 @end

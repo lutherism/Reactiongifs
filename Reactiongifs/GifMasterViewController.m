@@ -17,7 +17,6 @@
     NSMutableArray *_objects;
     NSArray *_albums;
     GifManager *_manager;
-    IBOutlet UITableView *albumTable;
     NSTimer *reloadimages;
 }
 @end
@@ -52,12 +51,13 @@
     [invocation setTarget:self];
     [invocation setSelector:@selector(timerCallback)];
     reloadimages = [NSTimer scheduledTimerWithTimeInterval:1.0
-										 invocation:invocation repeats:NO];
+										 invocation:invocation repeats:YES];
     [self startFetchingAlbums];
 }
 
 -(void)timerCallback{
-    [albumTable reloadData];
+    NSLog(@"timer");
+    [_albumTable reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,7 +76,7 @@
 {
     NSLog(@"got Albums");
     _albums = albums;
-    [albumTable reloadData];
+    [_albumTable reloadData];
     
 }
 
@@ -94,8 +94,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if(_albums)return [_albums count];
-    else return 1;
+    return [_albums count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

@@ -61,6 +61,16 @@
 		AC26669618FCE878002EB43A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668818FCE878002EB43A /* Icon-Small@2x.png */; };
 		AC26669718FCE878002EB43A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668918FCE878002EB43A /* Icon.png */; };
 		AC26669818FCE878002EB43A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668A18FCE878002EB43A /* Icon@2x.png */; };
+		AC2666B518FCF4EA002EB43A /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666AA18FCF4E9002EB43A /* Blue.png */; };
+		AC2666B618FCF4EA002EB43A /* Blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666AB18FCF4E9002EB43A /* Blue@2x.png */; };
+		AC2666B718FCF4EA002EB43A /* MKInfoPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2666AD18FCF4EA002EB43A /* MKInfoPanel.m */; };
+		AC2666B818FCF4EA002EB43A /* MKInfoPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2666AE18FCF4EA002EB43A /* MKInfoPanel.xib */; };
+		AC2666B918FCF4EA002EB43A /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666AF18FCF4EA002EB43A /* Red.png */; };
+		AC2666BA18FCF4EA002EB43A /* Red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666B018FCF4EA002EB43A /* Red@2x.png */; };
+		AC2666BB18FCF4EA002EB43A /* Tick.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666B118FCF4EA002EB43A /* Tick.png */; };
+		AC2666BC18FCF4EA002EB43A /* Tick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666B218FCF4EA002EB43A /* Tick@2x.png */; };
+		AC2666BD18FCF4EA002EB43A /* Warning.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666B318FCF4EA002EB43A /* Warning.png */; };
+		AC2666BE18FCF4EA002EB43A /* Warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2666B418FCF4EA002EB43A /* Warning@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +169,17 @@
 		AC26668818FCE878002EB43A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../../Downloads/icon/ios7/Icon-Small@2x.png"; sourceTree = "<group>"; };
 		AC26668918FCE878002EB43A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../Downloads/icon/ios7/Icon.png; sourceTree = "<group>"; };
 		AC26668A18FCE878002EB43A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../Downloads/icon/ios7/Icon@2x.png"; sourceTree = "<group>"; };
+		AC2666AA18FCF4E9002EB43A /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
+		AC2666AB18FCF4E9002EB43A /* Blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue@2x.png"; sourceTree = "<group>"; };
+		AC2666AC18FCF4EA002EB43A /* MKInfoPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKInfoPanel.h; sourceTree = "<group>"; };
+		AC2666AD18FCF4EA002EB43A /* MKInfoPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKInfoPanel.m; sourceTree = "<group>"; };
+		AC2666AE18FCF4EA002EB43A /* MKInfoPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKInfoPanel.xib; sourceTree = "<group>"; };
+		AC2666AF18FCF4EA002EB43A /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		AC2666B018FCF4EA002EB43A /* Red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red@2x.png"; sourceTree = "<group>"; };
+		AC2666B118FCF4EA002EB43A /* Tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tick.png; sourceTree = "<group>"; };
+		AC2666B218FCF4EA002EB43A /* Tick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tick@2x.png"; sourceTree = "<group>"; };
+		AC2666B318FCF4EA002EB43A /* Warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Warning.png; sourceTree = "<group>"; };
+		AC2666B418FCF4EA002EB43A /* Warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warning@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				AC2665C018FB1C59002EB43A /* GifAppDelegate.h */,
+				AC2666A918FCF4E9002EB43A /* MKInfoBundle */,
 				AC2665C118FB1C59002EB43A /* GifAppDelegate.m */,
 				AC2665C318FB1C59002EB43A /* Main_iPhone.storyboard */,
 				AC26664118FC9813002EB43A /* GifsViewController.h */,
@@ -341,12 +363,31 @@
 			name = icon;
 			sourceTree = "<group>";
 		};
+		AC2666A918FCF4E9002EB43A /* MKInfoBundle */ = {
+			isa = PBXGroup;
+			children = (
+				AC2666AA18FCF4E9002EB43A /* Blue.png */,
+				AC2666AB18FCF4E9002EB43A /* Blue@2x.png */,
+				AC2666AC18FCF4EA002EB43A /* MKInfoPanel.h */,
+				AC2666AD18FCF4EA002EB43A /* MKInfoPanel.m */,
+				AC2666AE18FCF4EA002EB43A /* MKInfoPanel.xib */,
+				AC2666AF18FCF4EA002EB43A /* Red.png */,
+				AC2666B018FCF4EA002EB43A /* Red@2x.png */,
+				AC2666B118FCF4EA002EB43A /* Tick.png */,
+				AC2666B218FCF4EA002EB43A /* Tick@2x.png */,
+				AC2666B318FCF4EA002EB43A /* Warning.png */,
+				AC2666B418FCF4EA002EB43A /* Warning@2x.png */,
+			);
+			name = MKInfoBundle;
+			path = "../../Downloads/MKInfoPanelDemo-master 2/MKInfoBundle";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC2665AD18FB1C59002EB43A /* Reactiongifs */ = {
+		AC2665AD18FB1C59002EB43A /* Reactions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC2665E618FB1C59002EB43A /* Build configuration list for PBXNativeTarget "Reactiongifs" */;
+			buildConfigurationList = AC2665E618FB1C59002EB43A /* Build configuration list for PBXNativeTarget "Reactions" */;
 			buildPhases = (
 				AC2665AA18FB1C59002EB43A /* Sources */,
 				AC2665AB18FB1C59002EB43A /* Frameworks */,
@@ -356,7 +397,7 @@
 			);
 			dependencies = (
 			);
-			name = Reactiongifs;
+			name = Reactions;
 			productName = Reactiongifs;
 			productReference = AC2665AE18FB1C59002EB43A /* Reactiongifs.app */;
 			productType = "com.apple.product-type.application";
@@ -410,7 +451,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC2665AD18FB1C59002EB43A /* Reactiongifs */,
+				AC2665AD18FB1C59002EB43A /* Reactions */,
 				AC2665D418FB1C59002EB43A /* ReactiongifsTests */,
 			);
 		};
@@ -421,25 +462,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2666BD18FCF4EA002EB43A /* Warning.png in Resources */,
 				AC2665C818FB1C59002EB43A /* Main_iPad.storyboard in Resources */,
 				AC26669118FCE878002EB43A /* Icon-76.png in Resources */,
 				AC26669418FCE878002EB43A /* Icon-Small-50@2x.png in Resources */,
 				AC26669618FCE878002EB43A /* Icon-Small@2x.png in Resources */,
+				AC2666BC18FCF4EA002EB43A /* Tick@2x.png in Resources */,
 				AC26668E18FCE878002EB43A /* Icon-60@2x.png in Resources */,
 				AC26669018FCE878002EB43A /* Icon-72@2x.png in Resources */,
 				AC26669218FCE878002EB43A /* Icon-76@2x.png in Resources */,
 				AC2665D018FB1C59002EB43A /* Images.xcassets in Resources */,
+				AC2666B818FCF4EA002EB43A /* MKInfoPanel.xib in Resources */,
 				AC26668F18FCE878002EB43A /* Icon-72.png in Resources */,
+				AC2666BB18FCF4EA002EB43A /* Tick.png in Resources */,
+				AC2666B518FCF4EA002EB43A /* Blue.png in Resources */,
 				AC26669818FCE878002EB43A /* Icon@2x.png in Resources */,
 				AC26664B18FCBA58002EB43A /* loading.gif in Resources */,
 				AC26669718FCE878002EB43A /* Icon.png in Resources */,
 				AC26668B18FCE878002EB43A /* Icon-40.png in Resources */,
 				AC26669518FCE878002EB43A /* Icon-Small.png in Resources */,
 				AC2665C518FB1C59002EB43A /* Main_iPhone.storyboard in Resources */,
+				AC2666B618FCF4EA002EB43A /* Blue@2x.png in Resources */,
 				AC26668D18FCE878002EB43A /* Icon-60.png in Resources */,
 				AC26668C18FCE878002EB43A /* Icon-40@2x.png in Resources */,
 				AC26669318FCE878002EB43A /* Icon-Small-50.png in Resources */,
+				AC2666BE18FCF4EA002EB43A /* Warning@2x.png in Resources */,
+				AC2666B918FCF4EA002EB43A /* Red.png in Resources */,
 				AC2665BC18FB1C59002EB43A /* InfoPlist.strings in Resources */,
+				AC2666BA18FCF4EA002EB43A /* Red@2x.png in Resources */,
 				AC26664D18FCBB45002EB43A /* preloader.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +527,7 @@
 				AC26662718FBB097002EB43A /* SDWebImageDownloader.m in Sources */,
 				AC26662C18FBB097002EB43A /* UIImage+GIF.m in Sources */,
 				AC2665BE18FB1C59002EB43A /* main.m in Sources */,
+				AC2666B718FCF4EA002EB43A /* MKInfoPanel.m in Sources */,
 				AC2665C218FB1C59002EB43A /* GifAppDelegate.m in Sources */,
 				AC2665FB18FB23E2002EB43A /* GifManager.m in Sources */,
 				AC26660218FB27F3002EB43A /* Gallery.m in Sources */,
@@ -501,7 +552,7 @@
 /* Begin PBXTargetDependency section */
 		AC2665DB18FB1C59002EB43A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC2665AD18FB1C59002EB43A /* Reactiongifs */;
+			target = AC2665AD18FB1C59002EB43A /* Reactions */;
 			targetProxy = AC2665DA18FB1C59002EB43A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -698,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC2665E618FB1C59002EB43A /* Build configuration list for PBXNativeTarget "Reactiongifs" */ = {
+		AC2665E618FB1C59002EB43A /* Build configuration list for PBXNativeTarget "Reactions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC2665E718FB1C59002EB43A /* Debug */,

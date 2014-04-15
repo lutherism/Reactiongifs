@@ -12,6 +12,7 @@
 #import "GifManager.h"
 #import "GifCommunicator.h"
 #import "UIImageView+WebCache.h"
+#import "MKInfoPanel.h"
 
 
 @interface GifDetailViewController () {
@@ -114,7 +115,7 @@
 								[self methodSignatureForSelector: @selector(timerCallback)]];
     [invocation setTarget:self];
     [invocation setSelector:@selector(timerCallback)];
-    reloadtimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+    reloadtimer = [NSTimer scheduledTimerWithTimeInterval:3.0
 										 invocation:invocation repeats:YES];
 
 }
@@ -140,8 +141,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //NSLog(@"making table with %lu cells", (unsigned long)[_images count]);
-    if(_images)return [_images count];
-    else return 1;
+    return [_images count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -175,6 +175,11 @@
     NSString *copyStringverse = image.link;
     UIPasteboard *pb = [UIPasteboard generalPasteboard];
     [pb setString:copyStringverse];
+    [MKInfoPanel showPanelInView:self.navigationController.view
+                            type:MKInfoPanelTypeInfo
+                           title:@"Copied Gif Link"
+                        subtitle:copyStringverse
+                       hideAfter:2];
 }
 
 #pragma mark - Split view

@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC2665AD18FB1C59002EB43A"
                BuildableName = "Reactiongifs.app"
-               BlueprintName = "Reactiongifs"
+               BlueprintName = "Reactions"
                ReferencedContainer = "container:Reactiongifs.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC2665AD18FB1C59002EB43A"
             BuildableName = "Reactiongifs.app"
-            BlueprintName = "Reactiongifs"
+            BlueprintName = "Reactions"
             ReferencedContainer = "container:Reactiongifs.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC2665AD18FB1C59002EB43A"
             BuildableName = "Reactiongifs.app"
-            BlueprintName = "Reactiongifs"
+            BlueprintName = "Reactions"
             ReferencedContainer = "container:Reactiongifs.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC2665AD18FB1C59002EB43A"
             BuildableName = "Reactiongifs.app"
-            BlueprintName = "Reactiongifs"
+            BlueprintName = "Reactions"
             ReferencedContainer = "container:Reactiongifs.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
