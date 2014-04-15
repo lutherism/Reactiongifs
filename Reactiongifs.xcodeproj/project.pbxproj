@@ -47,6 +47,20 @@
 		AC26664918FCA8C6002EB43A /* GifTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26664818FCA8C6002EB43A /* GifTableViewCell.m */; };
 		AC26664B18FCBA58002EB43A /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = AC26664A18FCBA58002EB43A /* loading.gif */; };
 		AC26664D18FCBB45002EB43A /* preloader.gif in Resources */ = {isa = PBXBuildFile; fileRef = AC26664C18FCBB45002EB43A /* preloader.gif */; };
+		AC26668B18FCE878002EB43A /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26667D18FCE878002EB43A /* Icon-40.png */; };
+		AC26668C18FCE878002EB43A /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26667E18FCE878002EB43A /* Icon-40@2x.png */; };
+		AC26668D18FCE878002EB43A /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26667F18FCE878002EB43A /* Icon-60.png */; };
+		AC26668E18FCE878002EB43A /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668018FCE878002EB43A /* Icon-60@2x.png */; };
+		AC26668F18FCE878002EB43A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668118FCE878002EB43A /* Icon-72.png */; };
+		AC26669018FCE878002EB43A /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668218FCE878002EB43A /* Icon-72@2x.png */; };
+		AC26669118FCE878002EB43A /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668318FCE878002EB43A /* Icon-76.png */; };
+		AC26669218FCE878002EB43A /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668418FCE878002EB43A /* Icon-76@2x.png */; };
+		AC26669318FCE878002EB43A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668518FCE878002EB43A /* Icon-Small-50.png */; };
+		AC26669418FCE878002EB43A /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668618FCE878002EB43A /* Icon-Small-50@2x.png */; };
+		AC26669518FCE878002EB43A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668718FCE878002EB43A /* Icon-Small.png */; };
+		AC26669618FCE878002EB43A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668818FCE878002EB43A /* Icon-Small@2x.png */; };
+		AC26669718FCE878002EB43A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668918FCE878002EB43A /* Icon.png */; };
+		AC26669818FCE878002EB43A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC26668A18FCE878002EB43A /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +145,20 @@
 		AC26664818FCA8C6002EB43A /* GifTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifTableViewCell.m; sourceTree = "<group>"; };
 		AC26664A18FCBA58002EB43A /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loading.gif; path = ../../Desktop/loading.gif; sourceTree = "<group>"; };
 		AC26664C18FCBB45002EB43A /* preloader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = preloader.gif; path = ../../Desktop/preloader.gif; sourceTree = "<group>"; };
+		AC26667D18FCE878002EB43A /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "../../Downloads/icon/ios7/Icon-40.png"; sourceTree = "<group>"; };
+		AC26667E18FCE878002EB43A /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40@2x.png"; path = "../../Downloads/icon/ios7/Icon-40@2x.png"; sourceTree = "<group>"; };
+		AC26667F18FCE878002EB43A /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "../../Downloads/icon/ios7/Icon-60.png"; sourceTree = "<group>"; };
+		AC26668018FCE878002EB43A /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "../../Downloads/icon/ios7/Icon-60@2x.png"; sourceTree = "<group>"; };
+		AC26668118FCE878002EB43A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../../Downloads/icon/ios7/Icon-72.png"; sourceTree = "<group>"; };
+		AC26668218FCE878002EB43A /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../../Downloads/icon/ios7/Icon-72@2x.png"; sourceTree = "<group>"; };
+		AC26668318FCE878002EB43A /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "../../Downloads/icon/ios7/Icon-76.png"; sourceTree = "<group>"; };
+		AC26668418FCE878002EB43A /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "../../Downloads/icon/ios7/Icon-76@2x.png"; sourceTree = "<group>"; };
+		AC26668518FCE878002EB43A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "../../Downloads/icon/ios7/Icon-Small-50.png"; sourceTree = "<group>"; };
+		AC26668618FCE878002EB43A /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "../../Downloads/icon/ios7/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		AC26668718FCE878002EB43A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "../../Downloads/icon/ios7/Icon-Small.png"; sourceTree = "<group>"; };
+		AC26668818FCE878002EB43A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../../Downloads/icon/ios7/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		AC26668918FCE878002EB43A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../Downloads/icon/ios7/Icon.png; sourceTree = "<group>"; };
+		AC26668A18FCE878002EB43A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../Downloads/icon/ios7/Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +254,7 @@
 		AC2665B818FB1C59002EB43A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC26669918FCE9F3002EB43A /* icon */,
 				AC26664C18FCBB45002EB43A /* preloader.gif */,
 				AC26664A18FCBA58002EB43A /* loading.gif */,
 				AC2665B918FB1C59002EB43A /* Reactiongifs-Info.plist */,
@@ -291,6 +320,27 @@
 			path = "../Downloads/SDWebImage-master/SDWebImage";
 			sourceTree = "<group>";
 		};
+		AC26669918FCE9F3002EB43A /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				AC26667D18FCE878002EB43A /* Icon-40.png */,
+				AC26667E18FCE878002EB43A /* Icon-40@2x.png */,
+				AC26667F18FCE878002EB43A /* Icon-60.png */,
+				AC26668018FCE878002EB43A /* Icon-60@2x.png */,
+				AC26668118FCE878002EB43A /* Icon-72.png */,
+				AC26668218FCE878002EB43A /* Icon-72@2x.png */,
+				AC26668318FCE878002EB43A /* Icon-76.png */,
+				AC26668418FCE878002EB43A /* Icon-76@2x.png */,
+				AC26668518FCE878002EB43A /* Icon-Small-50.png */,
+				AC26668618FCE878002EB43A /* Icon-Small-50@2x.png */,
+				AC26668718FCE878002EB43A /* Icon-Small.png */,
+				AC26668818FCE878002EB43A /* Icon-Small@2x.png */,
+				AC26668918FCE878002EB43A /* Icon.png */,
+				AC26668A18FCE878002EB43A /* Icon@2x.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +389,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = AlexJansen;
 				TargetAttributes = {
+					AC2665AD18FB1C59002EB43A = {
+						DevelopmentTeam = D94F3ZERQ8;
+					};
 					AC2665D418FB1C59002EB43A = {
 						TestTargetID = AC2665AD18FB1C59002EB43A;
 					};
@@ -369,9 +422,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2665C818FB1C59002EB43A /* Main_iPad.storyboard in Resources */,
+				AC26669118FCE878002EB43A /* Icon-76.png in Resources */,
+				AC26669418FCE878002EB43A /* Icon-Small-50@2x.png in Resources */,
+				AC26669618FCE878002EB43A /* Icon-Small@2x.png in Resources */,
+				AC26668E18FCE878002EB43A /* Icon-60@2x.png in Resources */,
+				AC26669018FCE878002EB43A /* Icon-72@2x.png in Resources */,
+				AC26669218FCE878002EB43A /* Icon-76@2x.png in Resources */,
 				AC2665D018FB1C59002EB43A /* Images.xcassets in Resources */,
+				AC26668F18FCE878002EB43A /* Icon-72.png in Resources */,
+				AC26669818FCE878002EB43A /* Icon@2x.png in Resources */,
 				AC26664B18FCBA58002EB43A /* loading.gif in Resources */,
+				AC26669718FCE878002EB43A /* Icon.png in Resources */,
+				AC26668B18FCE878002EB43A /* Icon-40.png in Resources */,
+				AC26669518FCE878002EB43A /* Icon-Small.png in Resources */,
 				AC2665C518FB1C59002EB43A /* Main_iPhone.storyboard in Resources */,
+				AC26668D18FCE878002EB43A /* Icon-60.png in Resources */,
+				AC26668C18FCE878002EB43A /* Icon-40@2x.png in Resources */,
+				AC26669318FCE878002EB43A /* Icon-Small-50.png in Resources */,
 				AC2665BC18FB1C59002EB43A /* InfoPlist.strings in Resources */,
 				AC26664D18FCBB45002EB43A /* preloader.gif in Resources */,
 			);
@@ -507,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -540,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -550,13 +617,15 @@
 		AC2665E718FB1C59002EB43A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-4";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reactiongifs/Reactiongifs-Prefix.pch";
 				INFOPLIST_FILE = "Reactiongifs/Reactiongifs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -564,13 +633,15 @@
 		AC2665E818FB1C59002EB43A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-4";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reactiongifs/Reactiongifs-Prefix.pch";
 				INFOPLIST_FILE = "Reactiongifs/Reactiongifs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
