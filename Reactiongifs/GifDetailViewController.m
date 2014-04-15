@@ -128,6 +128,13 @@
 
 - (void)didReceiveMemoryWarning
 {
+    [MKInfoPanel showPanelInView:self.navigationController.view
+                            type:MKInfoPanelTypeError
+                           title:@"Memory Issue"
+                        subtitle:@"Used too much memory on gifs. Flushing cached gifs"
+                       hideAfter:2];
+    [SDWebImageManager.sharedManager.imageCache clearMemory];
+    [SDWebImageManager.sharedManager.imageCache clearDisk];
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -159,6 +166,8 @@
     [cell layoutSubviews];
     return cell;
 }
+
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:
 (NSIndexPath *)indexPath {
