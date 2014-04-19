@@ -46,12 +46,12 @@
     _manager.communicator = [[GifCommunicator alloc] init];
     _manager.communicator.delegate = _manager;
     _manager.delegate = self;
-    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
+    /*NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
 								[self methodSignatureForSelector: @selector(timerCallback)]];
     [invocation setTarget:self];
     [invocation setSelector:@selector(timerCallback)];
     reloadimages = [NSTimer scheduledTimerWithTimeInterval:1.0
-										 invocation:invocation repeats:YES];
+										 invocation:invocation repeats:YES];*/
     [self startFetchingAlbums];
 }
 
@@ -77,7 +77,12 @@
     NSLog(@"got Albums");
     _albums = albums;
     [_albumTable reloadData];
+    [_albumTable performSelector:@selector(reloadData) withObject:nil afterDelay:0.1];
+
     
+}
+-(void)reloadData{
+    [_albumTable reloadData];
 }
 
 - (void)fetchingAlbumsFailedWithError:(NSError *)error
@@ -94,19 +99,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"building cells");
     return [_albums count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"building a cell");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     if([_albums count]>0){
     Album *album = _albums[indexPath.row];
     NSString *albumname = album.title;
     NSString *coverlink =[NSString stringWithFormat: @"http://imgur.com/%@t.gif",album.cover];
     [cell.imageView setImageWithURL:[NSURL URLWithString:coverlink]
-                       placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
-    cell.textLabel.text = albumname;
+                   placeholderImage:[UIImage imageNamed:@"placeholder.png"] options:SDWebImageProgressiveDownload];
+        cell.textLabel.text = albumname;
+
     }
     return cell;
 }

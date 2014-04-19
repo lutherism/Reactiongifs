@@ -68,7 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC2665AE18FB1C59002EB43A /* Reactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2665AE18FB1C59002EB43A /* React with GIFs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "React with GIFs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2665B118FB1C59002EB43A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC2665B318FB1C59002EB43A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AC2665B518FB1C59002EB43A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -192,7 +192,7 @@
 		AC2665AF18FB1C59002EB43A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC2665AE18FB1C59002EB43A /* Reactions.app */,
+				AC2665AE18FB1C59002EB43A /* React with GIFs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,7 +369,7 @@
 			);
 			name = "React with GIFs";
 			productName = Reactiongifs;
-			productReference = AC2665AE18FB1C59002EB43A /* Reactions.app */;
+			productReference = AC2665AE18FB1C59002EB43A /* React with GIFs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

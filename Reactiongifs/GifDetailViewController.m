@@ -62,6 +62,7 @@
 {
     _images = [[NSMutableArray alloc]initWithArray:images];
     _imageviews = [[NSMutableArray alloc]init];
+    NSLog(@"loaded %i images",[_images count]);
     /*int counter = 0;
     for(Gif *image in _images){
     NSString *link = [image getLink];
@@ -75,7 +76,10 @@
                    }];
         counter++;
     }*/
-    [_gifTable reloadData];
+    [self.tableView performSelector:@selector(reloadData) withObject:nil afterDelay:0.1];
+    CFRunLoopStop(CFRunLoopGetCurrent());
+
+
 }
 
 - (void)fetchingImageFailedWithError:(NSError *)error
@@ -107,15 +111,10 @@
         Album *a = _detailItem;
         [self startFetchingImage:a.id];
     }
-    [SDWebImageManager.sharedManager.imageDownloader setValue:@"SDWebImage Demo" forHTTPHeaderField:@"AppName"];
+    [SDWebImageManager.sharedManager.imageDownloader setValue:@"React with GIFs" forHTTPHeaderField:@"AppName"];
     SDWebImageManager.sharedManager.imageDownloader.executionOrder = SDWebImageDownloaderLIFOExecutionOrder;
     [self configureView];
-    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
-								[self methodSignatureForSelector: @selector(timerCallback)]];
-    [invocation setTarget:self];
-    [invocation setSelector:@selector(timerCallback)];
-    reloadtimer = [NSTimer scheduledTimerWithTimeInterval:3.0
-										 invocation:invocation repeats:YES];
+
 
 }
 
@@ -148,10 +147,22 @@
 {
     //NSLog(@"making table with %lu cells", (unsigned long)[_images count]);
     return [_images count];
+    NSLog(@"%i",[_images count]);
+
+}
+
+
+-(void) viewWillDisappear:(BOOL)animated {
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        [SDWebImageManager.sharedManager.imageCache clearMemory];
+        [SDWebImageManager.sharedManager.imageCache clearDisk];
+    }
+    [super viewWillDisappear:animated];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"building a cell");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     if (cell == nil)
     {
@@ -159,11 +170,16 @@
                                        reuseIdentifier:@"Cell"];
     }
     Gif *image = [_images objectAtIndex:indexPath.row];
-    //[cell textLabel].text=image.title;
-        NSString *link = [image getLink];
-        [cell.imageView setImageWithURL:[NSURL URLWithString:link]
-                       placeholderImage:[UIImage alloc]];
-    [cell layoutSubviews];
+    NSString *link = [image getLink];
+    UIProgressView *iprogressbar = (UIProgressView*)[cell viewWithTag:2];
+    [cell.imageView setImageWithURL:[NSURL URLWithString:link]
+                        placeholderImage:[UIImage imageNamed:@"fake.png"] options:SDWebImageProgressiveDownload progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+
+                            [iprogressbar setProgress:((CGFloat)receivedSize/(CGFloat)expectedSize) animated:NO];
+                        } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                            [cell layoutSubviews];
+                        }];
+
     return cell;
 }
 

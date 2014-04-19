@@ -17,6 +17,7 @@
         // Initialization code
     }
     return self;
+    
 }
 
 - (void)awakeFromNib
@@ -32,15 +33,15 @@
     float width = self.imageView.frame.size.width * scale;
     if(isnan(width))width=0;
     float height = self.imageView.frame.size.height * scale;
-        if(isnan(height))height=0;
+    if(isnan(height))height=0;
     //[cell.imageView setContentScaleFactor:2];
     NSLog(@"image size: %f, %f",width,height);
     CGRect irect = CGRectMake(
-                                        indentPoints,
-                                        0,
-                                        width - indentPoints,
-                                        height
-                                        );
+                              indentPoints,
+                              0,
+                              width - indentPoints,
+                              height
+                              );
     self.imageView.frame = irect;
     /*CGRect crect = CGRectMake(self.frame.origin.x,
                               self.frame.origin.y,

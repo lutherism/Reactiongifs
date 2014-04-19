@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GifManagerDelegate.h"
 
-@interface GifDetailViewController : UITableViewController <UISplitViewControllerDelegate, UITableViewDelegate, UITableViewDataSource, GifManagerDelegate>
+@interface GifDetailViewController : UITableViewController <UISplitViewControllerDelegate, UITableViewDelegate, UITableViewDataSource, GifManagerDelegate>{
+    
+    IBOutlet UITableView *tableView;
+}
 
 @property (strong, nonatomic) id detailItem;
 
