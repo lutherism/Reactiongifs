@@ -15,7 +15,7 @@
 @property (strong, nonatomic) NSString *description;
 @property (strong, nonatomic) NSNumber *datetime;
 @property (strong, nonatomic) NSString *type;
-@property (strong,nonatomic) NSNumber *animated;
+@property (strong, nonatomic) NSNumber *animated;
 @property (strong, nonatomic) NSNumber *width;
 @property (strong, nonatomic) NSNumber *height;
 @property (strong, nonatomic) NSNumber *size;

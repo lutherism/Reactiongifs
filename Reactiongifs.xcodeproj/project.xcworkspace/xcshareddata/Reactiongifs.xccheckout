@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EDDB66A9-F8EF-4274-AEE4-CF2193EAA255</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Reactiongifs</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F3E75051-5DB5-4C00-BDE8-6A80FA220734</key>
+		<string>https://github.com/lutherism/Reactiongifs.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Reactiongifs.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F3E75051-5DB5-4C00-BDE8-6A80FA220734</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lutherism/Reactiongifs.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F3E75051-5DB5-4C00-BDE8-6A80FA220734</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F3E75051-5DB5-4C00-BDE8-6A80FA220734</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Reactiongifs</string>
+		</dict>
+	</array>
+</dict>
+</plist>
